@@ -1,0 +1,114 @@
+@font-face {
+
+    font-style: normal;
+}
+ul.sdt_menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	/* [disabled]font-family:"Arial Black", Gadget, sans-serif; */
+	font-size:14px;
+	width:1020px;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:213px;
+	height:20px;
+	position:relative;
+	cursor:pointer;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+	top:15px;
+	left:-2px;
+	width:213px;
+	height:85px;
+	z-index:12;
+	/* [disabled]background:transparent url(../images/overlay.png) no-repeat bottom right; */
+	/* [disabled]-moz-box-shadow:0px 0px 2px #000 inset; */
+	/* [disabled]-webkit-box-shadow:0px 0px 2px #000 inset; */
+	/* [disabled]box-shadow:0px 0px 2px #000 inset; */
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:85px;
+	z-index:100;
+	/* [disabled]-moz-box-shadow:0px 0px 4px #000; */
+	/* [disabled]-webkit-box-shadow:0px 0px 4px #000; */
+	/* [disabled]box-shadow:0px 0px 4px #000; */
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:25px;
+	left:0px;
+	width:213px;
+	height:60px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	/* [disabled]background:#111; */
+	top:19px;
+	width:213px;
+	height:0px;
+	left:1px;
+	z-index:14;
+	/* [disabled]-moz-box-shadow:0px 0px 4px #000 inset; */
+	/* [disabled]-webkit-box-shadow:0px 0px 4px #000 inset; */
+	/* [disabled]box-shadow:0px 0px 4px #000 inset; */
+}
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	margin-left:15px;
+	text-transform:uppercase;
+	/* [disabled]text-shadow:1px 1px 1px #000; */
+}
+ul.sdt_menu li span span.sdt_link{
+	color:f0f0f0;
+	font-size:35px;
+	/* [disabled]float:center; */
+	clear:both;
+	/* [disabled]font-family: 'RobotoThin'; */
+	text-align: center;
+	/* [disabled]font-weight: bolder; */
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:#0B75AF;
+	float:left;
+	clear:both;
+	width:213x; /*For dumbass IE7*/
+	font-size:10px;
+	letter-spacing:1px;
+}
+ul.sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:100px;
+	overflow:hidden;
+	height:213px;
+	top:85px;
+	left:0px;
+	display:none;
+	/* [disabled]background:#000; */
+}
+ul.sdt_menu li div.sdt_box a{
+	float:left;
+	clear:both;
+	line-height:30px;
+	color:#0B75AF;
+}
+ul.sdt_menu li div.sdt_box a:first-child{
+	margin-top:15px;
+}
+ul.sdt_menu li div.sdt_box a:hover{
+	color:#fff;
+}
