@@ -1,0 +1,21 @@
+{
+  "name": "lemonplace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "up": "docker-compose up --build -d && yarn seed",
+    "seed": "docker exec mysql_lemonplace mysql -u root -proot test < db.sql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolicodes/lemonplace.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tolicodes/lemonplace.com/issues"
+  },
+  "homepage": "https://github.com/tolicodes/lemonplace.com#readme"
+}

@@ -2,12 +2,19 @@
 session_start();
 
 switch ($_SERVER['HTTP_HOST']) {
-	case 'localhost':
-		$sitePath = 'http://localhost/lemonplace/';
-		$connect = mysqli_connect('localhost','root','','lemon_place');
+	// docker
+	case 'localhost:8070':
+		$sitePath = 'http://localhost:8010/';
+		
+		$host = 'mysql_lemonplace';
+		$user = 'root';
+		$password = 'root';
+		$database = 'test';
+
+		$connect = mysqli_connect($host, $user, $password, $database);
 		
 		try {
-			$db = new PDO('mysql:host=localhost;dbname=lemon_place', 'root', '');
+			$db = new PDO('mysql:host=' . $host . ';dbname=' . $database, $user, $password);
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		} catch (PDOException $e) {
 		    echo 'Connection failed: ' . $e->getMessage();
